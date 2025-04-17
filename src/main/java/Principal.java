@@ -6,5 +6,10 @@ public class Principal {
         ConsultaDivisa consultaDivisa = new ConsultaDivisa();
         Moneda divisa = consultaDivisa.buscarDivisa("USD", "EUR");
         System.out.println(divisa.conversion_rate());
+
+        System.out.println("""
+                ********************************************************
+                
+                """);
     }
 }
