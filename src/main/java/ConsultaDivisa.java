@@ -7,9 +7,10 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class ConsultaDivisa {
+    private final String apiKey = "";
     public Moneda buscarDivisa(String divisaBase, String divisaDestino) {
 
-        URI direction = URI.create("https://v6.exchangerate-api.com/v6/91f72fe19ac8bba59bfbbcb0/pair/"
+        URI direction = URI.create("https://v6.exchangerate-api.com/v6/" + apiKey + "/pair/"
                 + divisaBase + "/" + divisaDestino);
 
         HttpClient client = HttpClient.newHttpClient();
